@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="studentStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Student Login</h1>
+    </header>
+    <div class="logo-container">
+        <a href="VRSHome.html">
+            <img src="CCIT-removebg.png" alt="Home Page">
+        </a>
+        <div class="text-container">
+            <p class="large-text">College of Communications and Information Technology</p>
+            <p class="small-text">President Ramon Magsaysay State University</p>
+        </div>
+    </div>
+    <div class="content">
+        <form id="loginForm" action="student_login.php" method="POST">
+            <div class="form-group">
+                <label for="id_number">ID Number:</label>
+                <input type="text" id="id_number" name="id_number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <footer>
+        VRS Capstone &#169; 2024 by Dagun, Esman, Literatus, Mendoza
+    </footer>
+</body>
+</html>

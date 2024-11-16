@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Tools</title>
+    <link rel="stylesheet" href="adminToolsStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Tools</h1>
+        <button class="logout-button" onclick="window.location.href='VRSHome.html'">Log Out</button>
+    </header>
+    <div class="logo-container">
+        <a href="VRSHome.html">
+            <img src="CCIT-removebg.png" alt="Home Page">
+        </a>
+        <div class="text-container">
+            <p class="large-text">College of Communications and Information Technology</p>
+            <p class="small-text">President Ramon Magsaysay State University</p>
+        </div>
+    </div>
+    <div class="content">
+        <h2>User Management</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID Number</th>
+                    <th>Password</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Year Level</th>
+                    <th>Vehicle Type</th>
+                    <th>Vehicle Make</th>
+                    <th>Vehicle Model</th>
+                    <th>Vehicle Year</th>
+                    <th>Vehicle Color</th>
+                    <th>Plate Number</th>
+                    <th>House No.</th>
+                    <th>Street</th>
+                    <th>Province</th>
+                    <th>Municipality</th>
+                    <th>Barangay</th>
+                    <th>Purok</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- User data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        VRS Capstone &#169; 2024 by Dagun, Esman, Literatus, Mendoza
+    </footer>
+    <script src="adminTools.js"></script>
+</body>
+</html>

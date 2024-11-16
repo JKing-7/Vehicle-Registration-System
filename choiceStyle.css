@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffea8c;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+}
+
+p a {
+    text-decoration: underline;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttonPlatform {
+    border-radius: 10%;
+    height: 80%;
+    width: 45%;
+    text-align: center;
+    margin-top: 4.5%;
+}
+
+img {
+    max-height: 25%;
+    max-width: 25%;
+    display: flex;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pformHead {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.spacer1 {
+    margin-top: 8%;
+}
+
+.btnFam {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.adminBtn {
+    height: 50%;
+    width: 17vw;
+    background-color: lightblue;
+    border-radius: 20px 20px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.adminBtn, a {
+    text-decoration: none;
+    color: black;
+    border-radius: 20px 20px;
+}
+
+.adminBtn:hover {
+    background-color: rgb(0, 117, 168);
+    color: white;
+}
+
+.employeeBtn {
+    height: 50%;
+    width: 17vw;
+    background-color: lightblue;
+    border-radius: 20px 20px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.employeeBtn, a {
+    text-decoration: none;
+    color: black;
+}
+
+.employeeBtn:hover {
+    background-color: rgb(0, 117, 168);
+    color: white;
+}
+
+.studentBtn {
+    height: 50%;
+    width: 17vw;
+    background-color: lightblue;
+    border-radius: 20px 20px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.studentBtn, a {
+    text-decoration: none;
+    color: black;
+}
+
+.studentBtn:hover {
+    background-color: rgb(0, 117, 168);
+    color: white;
+}
+
+.registerBtn {
+    height: 50%;
+    width: 17vw;
+    background-color: lightblue;
+    border-radius: 20px 20px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.registerBtn, a {
+    text-decoration: none;
+    color: black;
+}
+
+.registerBtn:hover {
+    background-color: rgb(0, 117, 168);
+    color: white;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

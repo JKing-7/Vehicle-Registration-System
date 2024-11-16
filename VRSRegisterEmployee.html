@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration </title>
+    <link rel="stylesheet" href="registrationStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+    <div class="logoCCIT">
+        <a href="VRSHome.html">
+            <img src="CCIT-removebg.png">
+        </a>
+    </div>
+    <div class="pformHead">
+        <font size="6.5vw"> College of Communications and Information Technology <br></font>
+        <font size="4vw"> President Ramon Magsaysay State University </font>
+    </div>
+    <div class="content">
+        <div class="mainPlatform">
+            <div class="tab-container">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Tab1');">Account</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab2');">Personal</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab3');">Vehicle</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab4');">Address</button>
+                </div>
+                <form action="register.php" method="POST">
+                    <div id="Tab1" class="tabcontent">
+                        <p> ID Number: </p>
+                        <input type="text" name="id_number" required></input>
+                        <p> Password: </p>
+                        <input type="text" name="password" required></input>
+                        <p> Re-enter password: </p>
+                        <input type="text" required></input>
+                        <br><br>
+                        <button type="submit"> Create Account </button>
+                    </div>
+                    <div id="Tab2" class="tabcontent">
+                        <p> Last Name: </p>
+                        <input type="text" name="last_name" placeholder="Dela Cruz" required></input>
+                        <p> First Name: </p>
+                        <input type="text" name="first_name" placeholder="Juan" required></input>
+                        <p> Middle Name (if applicable): </p>
+                        <input type="text" name="middle_name" placeholder="Rosario" required></input><br><br>
+                        <p> Sex: </p>
+                        <input type="radio" id="Male" name="sex" value="Male">
+                        <label for="Male">Male</label><br>
+                        <input type="radio" id="Female" name="sex" value="Female">
+                        <label for="Female">Female</label><br><br>
+                        <p> Course: </p>
+                        <input type="radio" id="BSIT" name="course" value="BSIT">
+                        <label for="BSIT">BS Information Technology</label><br>
+                        <input type="radio" id="BSCS" name="course" value="BSCS">
+                        <label for="BSCS">BS Computer Science</label><br><br>
+                        <p> Year level: </p>
+                        <input type="radio" id="1stYr" name="year_level" value="1stYr">
+                        <label for="1stYr">First Year</label><br>
+                        <input type="radio" id="2ndYr" name="year_level" value="2ndYr">
+                        <label for="2ndYr">Second Year</label><br>
+                        <input type="radio" id="3rdYr" name="year_level" value="3rdYr">
+                        <label for="3rdYr">Third Year</label><br>
+                        <input type="radio" id="4thYr" name="year_level" value="4thYr">
+                        <label for="4thYr">Fourth Year</label><br>
+                    </div>
+                    <div id="Tab3" class="tabcontent">
+                        <label for="carType">Choose a vehicle:</label><br>
+                        <select id="cars" name="vehicle_type">
+                            <option value="4wheels"> 4 Wheels </option>
+                            <option value="2wheels"> 3 Wheels </option>
+                            <option value="other"> 2 Wheels </option>
+                        </select>
+                        <p> Make: </p>
+                        <input type="text" name="vehicle_make" placeholder="Ex. Toyota" required></input>
+                        <p> Model: </p>
+                        <input type="text" name="vehicle_model" placeholder="Ex. Vios" required></input>
+                        <p> Year: </p>
+                        <input type="text" name="vehicle_year" placeholder="2024" required></input>
+                        <p> Color: </p>
+                        <input type="text" name="vehicle_color" placeholder="Matte Red" required></input>
+                        <p> Plate Number: </p>
+                        <input type="text" name="plate_number" required></input><br>
+                    </div>
+                    <div id="Tab4" class="tabcontent">
+                        <p> House No.: </p>
+                        <input type="text" name="house_no" placeholder="Lot 1 Block 1" required></input>
+                        <p> Street/Village: </p>
+                        <input type="text" name="street" placeholder="Kalye Street" required></input>
+                        <p> Province: </p>
+                        <input type="text" name="province" placeholder="Zambales" required></input>
+                        <p> Municipality: </p>
+                        <input type="text" name="municipality" placeholder="Iba" required></input>
+                        <p> Barangay: </p>
+                        <input type="text" name="barangay" placeholder="Palanginan" required></input>
+                        <p> Purok (if applicable): </p>
+                        <input type="text" name="purok" placeholder="1" required></input><br><br>
+                        <button type="submit"> Save </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        VRS Capstone &#169; 2024 by Dagun, Esman, Literatus, Mendoza
+    </footer>
+    <script src="register.js"></script>
+</body>
+</html>

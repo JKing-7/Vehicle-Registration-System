@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Admin Account</title>
+    <link rel="stylesheet" href="adminRegistrationStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Create Admin Account</h1>
+    </header>
+    <div class="logo-container">
+        <a href="VRSHome.html">
+            <img src="CCIT-removebg.png" alt="Home Page">
+        </a>
+        <div class="text-container">
+            <p class="large-text">College of Communications and Information Technology</p>
+            <p class="small-text">President Ramon Magsaysay State University</p>
+        </div>
+    </div>
+    <div class="content">
+        <form id="createAdminForm" action="createAdmin.php" method="POST">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" id="middle_name" name="middle_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+    <footer>
+        VRS Capstone &#169; 2024 by Dagun, Esman, Literatus, Mendoza
+    </footer>
+</body>
+</html>
